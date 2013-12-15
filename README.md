@@ -7,6 +7,8 @@ Based on the solution of [@kuroe](https://github.com/kuroe)
 
 Tested on Chrome Mac OSX, with Bootstrap 3.0.2
 
+[See Tests Here](http://little33.com/typeahead.js-bootstrap3.less/test.html)
+
 ### Introduction
 ===========================
 
