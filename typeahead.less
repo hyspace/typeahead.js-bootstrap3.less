@@ -58,10 +58,10 @@
     .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
   }
   .input-group.input-group-sm .twitter-typeahead:first-child &{
-    .border-left-radius(@border-radius-small)!important;
+    border-radius:@border-radius-small 0 0 @border-radius-small!important;
   }
   .input-group.input-group-sm .twitter-typeahead:last-child &{
-    .border-right-radius(@border-radius-small)!important;
+    border-radius:0 @border-radius-small @border-radius-small 0!important;
   }
 
   //sizing - large:size and border
@@ -69,17 +69,16 @@
     .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
   }
   .input-group.input-group-lg .twitter-typeahead:first-child &{
-    .border-left-radius(@border-radius-large)!important;
+    border-radius:@border-radius-large 0 0 @border-radius-large!important;
   }
   .input-group.input-group-lg .twitter-typeahead:last-child &{
-    .border-right-radius(@border-radius-large)!important;
+    border-radius:0 @border-radius-large @border-radius-large 0!important;
   }
 }
 
 //for wrapper
 .twitter-typeahead {
   width: 100%;
-  position: relative;
 }
 
 //particular style for each other

@@ -104,13 +104,11 @@ textarea.input-group.input-group-sm .twitter-typeahead .tt-hint {
 }
 .input-group.input-group-sm .twitter-typeahead:first-child .tt-query,
 .input-group.input-group-sm .twitter-typeahead:first-child .tt-hint {
-  border-bottom-left-radius: 3px !important;
-  border-top-left-radius: 3px !important;
+  border-radius: 3px 0 0 3px !important;
 }
 .input-group.input-group-sm .twitter-typeahead:last-child .tt-query,
 .input-group.input-group-sm .twitter-typeahead:last-child .tt-hint {
-  border-bottom-right-radius: 3px !important;
-  border-top-right-radius: 3px !important;
+  border-radius: 0 3px 3px 0 !important;
 }
 .input-group.input-group-lg .twitter-typeahead .tt-query,
 .input-group.input-group-lg .twitter-typeahead .tt-hint {
@@ -131,17 +129,14 @@ textarea.input-group.input-group-lg .twitter-typeahead .tt-hint {
 }
 .input-group.input-group-lg .twitter-typeahead:first-child .tt-query,
 .input-group.input-group-lg .twitter-typeahead:first-child .tt-hint {
-  border-bottom-left-radius: 6px !important;
-  border-top-left-radius: 6px !important;
+  border-radius: 6px 0 0 6px !important;
 }
 .input-group.input-group-lg .twitter-typeahead:last-child .tt-query,
 .input-group.input-group-lg .twitter-typeahead:last-child .tt-hint {
-  border-bottom-right-radius: 6px !important;
-  border-top-right-radius: 6px !important;
+  border-radius: 0 6px 6px 0 !important;
 }
 .twitter-typeahead {
   width: 100%;
-  position: relative;
 }
 .twitter-typeahead .tt-hint {
   color: #999999;
