@@ -23,18 +23,18 @@ import this file to your site's less stylesheet after `mixins.less` and `variabl
 
 example:
 
-  // variables and mixins of Bootstrap
-  @import "variables.less";
-  @import "mixins.less";
+    // variables and mixins of Bootstrap
+    @import "variables.less";
+    @import "mixins.less";
 
-  /* other Bootstrap or custom modules */
+    /* other Bootstrap or custom modules */
 
-  //typeahead
-  @import "typeahead.less";
+    //typeahead
+    @import "typeahead.less";
 
 #### if you have less source files of Bootstrap in your project:
 
-  link compiled css file to your site.
+link compiled css file to your site.
 
 ### Thanks
 
