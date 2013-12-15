@@ -139,6 +139,10 @@ textarea.input-group.input-group-lg .twitter-typeahead .tt-hint {
   border-bottom-right-radius: 6px !important;
   border-top-right-radius: 6px !important;
 }
+.twitter-typeahead {
+  width: 100%;
+  position: relative;
+}
 .twitter-typeahead .tt-hint {
   color: #999999;
   z-index: 1;
