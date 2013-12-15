@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/docs.css">
+  <link rel="stylesheet" type="text/css" href="https://rawgithub.com/hyspace/typeahead.js-bootstrap3.less/master/typeahead.css">
+  <style>
+  body{padding-top: 15px;}
+  </style>
+</head>
+<body>
+<div class="container">
+
+
+  <div class="form-group">
+    <label for="example">Typeahead.js-bootstrap3.less by hyspace</label>
+    <div class="input-group">
+      <span class="input-group-addon">@</span>
+      <input id="example" type="text" class="form-control" placeholder="Bootstrap">
+    </div>
+  </div>
+  <br><br><br>
+  <a href="test.html" target="_blank">More tests》</a>
+
+  <div class="page-header">
+    <h1 id="forms">Tests (Using Bootstrap's doc)</h1>
+  </div>
+
+
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="forms">Forms</h1>
+    </div>
+
+    <h2 id="forms-example">Basic example</h2>
+
+    <div class="bs-example">
+      <form role="form">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Bootstrap">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Bootstrap">
+        </div>
+
+
+
+      </form>
+    </div><!-- /example -->
+
+
+
+    <h2 id="forms-inline">Inline form</h2>
+
+    <div class="bs-example">
+      <form class="form-inline" role="form">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputEmail2">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Bootstrap">
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputPassword2">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Bootstrap">
+        </div>
+      </form>
+    </div><!-- /example -->
+
+
+
+    <h2 id="forms-horizontal">Horizontal form</h2>
+
+    <div class="bs-example">
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Bootstrap">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Bootstrap">
+          </div>
+        </div>
+        <div class="form-group">
+
+        </div>
+
+      </form>
+    </div><!-- /.bs-example -->
+
+
+    <h2 id="forms-controls">Supported controls</h2>
+
+
+    <h3>Inputs</h3>
+
+    <div class="bs-example">
+      <form role="form">
+        <input type="text" class="form-control" placeholder="Bootstrap">
+      </form>
+    </div>
+
+
+    <h2 id="forms-control-states">Form states</h2>
+
+    <h3 id="forms-validation">Validation states</h3>
+
+    <div class="bs-example">
+      <form role="form">
+        <div class="form-group has-success">
+          <label class="control-label" for="inputSuccess">Input with success</label>
+          <input type="text" class="form-control" id="inputSuccess">
+        </div>
+        <div class="form-group has-warning">
+          <label class="control-label" for="inputWarning">Input with warning</label>
+          <input type="text" class="form-control" id="inputWarning">
+        </div>
+        <div class="form-group has-error">
+          <label class="control-label" for="inputError">Input with error</label>
+          <input type="text" class="form-control" id="inputError">
+        </div>
+      </form>
+    </div><!-- /.bs-example -->
+
+
+
+    <h2 id="forms-control-sizes">Control sizing</h2>
+
+
+    <h3>Height sizing</h3>
+
+    <div class="bs-example bs-example-control-sizing">
+      <form role="form">
+        <div class="controls">
+          <input class="form-control input-lg" type="text" placeholder="Bootstrap">
+          <input type="text" class="form-control" placeholder="Bootstrap">
+          <input class="form-control input-sm" type="text" placeholder="Bootstrap">
+
+
+
+
+        </div>
+      </form>
+    </div><!-- /.bs-example -->
+
+
+    <h3>Column sizing</h3>
+
+    <div class="bs-example">
+      <form role="form">
+        <div class="row">
+          <div class="col-xs-2">
+            <input type="text" class="form-control" placeholder="Bootstrap">
+          </div>
+          <div class="col-xs-3">
+            <input type="text" class="form-control" placeholder="Bootstrap">
+          </div>
+          <div class="col-xs-4">
+            <input type="text" class="form-control" placeholder="Bootstrap">
+          </div>
+        </div>
+      </form>
+    </div><!-- /.bs-example -->
+
+
+
+    <!-- /.bs-example -->
+  </div>
+
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="input-groups">Input groups</h1>
+    </div>
+
+    <h2 id="input-groups-basic">Basic example</h2>
+    <form class="bs-example bs-example-form" role="form">
+      <div class="input-group">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder="Bootstrap">
+      </div>
+      <br>
+      <div class="input-group">
+        <input type="text" class="form-control">
+        <span class="input-group-addon">.00</span>
+      </div>
+      <br>
+      <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control">
+        <span class="input-group-addon">.00</span>
+      </div>
+    </form>
+
+    <h2 id="input-groups-sizing">Sizing</h2>
+
+    <form class="bs-example bs-example-form" role="form">
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder="Bootstrap">
+      </div>
+      <br>
+      <div class="input-group">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder="Bootstrap">
+      </div>
+      <br>
+      <div class="input-group input-group-sm">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder="Bootstrap">
+      </div>
+    </form>
+
+    <h2 id="input-groups-checkboxes-radios">Checkboxes and radio addons</h2>
+
+    <form class="bs-example bs-example-form">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <span class="input-group-addon">
+              <input type="checkbox">
+            </span>
+            <input type="text" class="form-control">
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+          <div class="input-group">
+            <span class="input-group-addon">
+              <input type="radio">
+            </span>
+            <input type="text" class="form-control">
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+    </form>
+
+    <h2 id="input-groups-buttons">Button addons</h2>
+
+    <form class="bs-example bs-example-form">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+            </span>
+            <input type="text" class="form-control">
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+          <div class="input-group">
+            <input type="text" class="form-control">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+            </span>
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+    </form>
+
+    <h2 id="input-groups-buttons-dropdowns">Buttons with dropdowns</h2>
+    <p></p>
+    <form class="bs-example bs-example-form" role="form">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div><!-- /btn-group -->
+            <input type="text" class="form-control">
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+          <div class="input-group">
+            <input type="text" class="form-control">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+              <ul class="dropdown-menu pull-right" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div><!-- /btn-group -->
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+    </form>
+
+    <h2 id="input-groups-buttons-segmented">Segmented buttons</h2>
+    <form class="bs-example bs-example-form" role="form">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <input type="text" class="form-control">
+          </div><!-- /.input-group -->
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+          <div class="input-group">
+            <input type="text" class="form-control">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu pull-right" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div><!-- /.input-group -->
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+    </form>
+  </div>
+</div>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+<script src="javascripts/typeahead.js"></script>
+<script src="javascripts/ghostwriter.min.js"></script>
+<script src="javascripts/main.js"></script>
+</body>
+</html>
