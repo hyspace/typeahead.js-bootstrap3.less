@@ -1,71 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Typeahead.js-bootstrap3.less by hyspace</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <title>Typeahead.js-bootstrap3.less by hyspace</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Typeahead.js-bootstrap3.less</h1>
-        <p>Bootstrap3 style for typeahead.js using bootstrap 3 mixins and variables.</p>
+    <div id="container">
+      <div class="inner">
 
-        <p class="view"><a href="https://github.com/hyspace/typeahead.js-bootstrap3.less">View the Project on GitHub <small>hyspace/typeahead.js-bootstrap3.less</small></a></p>
+        <header>
+          <h1>Typeahead.js-bootstrap3.less</h1>
+          <h2>Bootstrap3 style for typeahead.js using bootstrap 3 mixins and variables.</h2>
+        </header>
 
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/hyspace/typeahead.js-bootstrap3.less/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/hyspace/typeahead.js-bootstrap3.less/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/hyspace/typeahead.js-bootstrap3.less" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-        <ul>
-          <li><a href="https://github.com/hyspace/typeahead.js-bootstrap3.less/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/hyspace/typeahead.js-bootstrap3.less/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/hyspace/typeahead.js-bootstrap3.less">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <hr>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <section id="main_content">
+          <h1>
+<a name="typeaheadjs-bootstrap3less" class="anchor" href="#typeaheadjs-bootstrap3less"><span class="octicon octicon-link"></span></a>typeahead.js-bootstrap3.less</h1>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p>Bootstrap3 style for <a href="https://github.com/twitter/typeahead.js">typeahead.js</a> using <a href="https://github.com/twbs/bootstrap/">Bootstrap 3</a> mixins and variables.</p>
+
+<p>Based on the solution of <a href="https://github.com/kuroe">@kuroe</a></p>
+
+<p>Tested on Chrome Mac OSX, with Bootstrap 3.0.2</p>
+
+<h3>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h3>
+
+<h1></h1>
+
+<p>This is a stylesheet for <a href="https://github.com/twitter/typeahead.js">typeahead.js</a>, which makes your "typeaheaded" input control looks same as <a href="https://github.com/twbs/bootstrap/">Bootstrap 3</a>'s.</p>
+
+<p>Using mixins and variables provided by Boostrap 3, This stylesheet is useful when you aplied custom theme to Boostrap for your site, because the change you made in variables and mixins will be aplied to your "typeaheaded" input control automatically.</p>
+
+<p><strong>This stylesheet requires <code>mixins.less</code> and <code>variables.less</code> of Bootstrap 3. If you are not using Boostrap's mixins and variables in your site, you can use compiled css file with default colors and sizings of Boostrap instead.</strong></p>
+
+<h3>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use</h3>
+
+<h1></h1>
+
+<h4>
+<a name="-if-you-have-less-source-files-of-bootstrap-in-your-project" class="anchor" href="#-if-you-have-less-source-files-of-bootstrap-in-your-project"><span class="octicon octicon-link"></span></a>-if you have less source files of Bootstrap in your project:</h4>
+
+<p>import this file to your site's less stylesheet after <code>mixins.less</code> and <code>variables.less</code></p>
+
+<p>example:</p>
+
+<pre><code>// variables and mixins of Bootstrap
+@import "variables.less";
+@import "mixins.less";
+
+/* other Bootstrap or custom modules */
+
+//typeahead
+@import "typeahead.less";
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<h4>
+<a name="-if-you-have-less-source-files-of-bootstrap-in-your-project-1" class="anchor" href="#-if-you-have-less-source-files-of-bootstrap-in-your-project-1"><span class="octicon octicon-link"></span></a>-if you have less source files of Bootstrap in your project:</h4>
+
+<p>link compiled css file to your site.</p>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="thanks" class="anchor" href="#thanks"><span class="octicon octicon-link"></span></a>Thanks</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h1></h1>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p>This repo is here because this <a href="https://github.com/twitter/typeahead.js/issues/378">Issue</a>, and is based on the solution of <a href="http://jsfiddle.net/kuroe/qrtua/14/">@kuroe</a></p>
+        </section>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+        <footer>
+          Typeahead.js-bootstrap3.less is maintained by <a href="https://github.com/hyspace">hyspace</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+                  <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-21699184-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/hyspace">hyspace</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
   </body>
 </html>
