@@ -1,0 +1,35 @@
+{
+  "name": "typehead.js-bootstrap3.less",
+  "description": "Bootstrap3 style for typeahead.js using Bootstrap 3 mixins and variables",
+  "version": "0.1.0",
+  "keywords": [
+    "less",
+    "bootstrap",
+    "typeahead.js"
+  ],
+  "homepage": "http://little33.com/typeahead.js-bootstrap3.less/",
+  "author": "hyspace",
+  "scripts": {
+    "build": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyspace/typeahead.js-bootstrap3.less"
+  },
+  "bugs": {
+    "url": "https://github.com/hyspace/typeahead.js-bootstrap3.less/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.9",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-less": "~0.8.1"
+  }
+}
