@@ -773,8 +773,8 @@ h1[id] {
 }
 
 /* Forms */
-.bs-example-control-sizing select,
-.bs-example-control-sizing input[type="text"] + input[type="text"] {
+.bs-example-control-sizing select/*,
+.bs-example-control-sizing input[type="text"] + input[type="text"] */{
   margin-top: 10px;
 }
 .bs-example-form .input-group {

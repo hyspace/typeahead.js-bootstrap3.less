@@ -4,7 +4,7 @@
   <title></title>
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.0.2/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/docs.css">
-  <link rel="stylesheet" type="text/css" href="typeahead.css">
+  <link rel="stylesheet" type="text/css" href="https://rawgithub.com/hyspace/typeahead.js-bootstrap3.less/develop/typeahead.css">
   <style>
   body{padding-top: 15px;}
   </style>
@@ -137,15 +137,18 @@
     <div class="bs-example bs-example-control-sizing">
       <form role="form">
         <div class="controls">
-          <input class="form-control input-lg" type="text" placeholder="Bootstrap">
-          <input type="text" class="form-control" placeholder="Bootstrap">
-          <input class="form-control input-sm" type="text" placeholder="Bootstrap">
-
-
-
-
+          <div class="input-group input-group-lg">
+            <input class="form-control" type="text" placeholder="Bootstrap">
+          </div>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Bootstrap">
+          </div>
+          <div class="input-group input-group-sm">
+            <input class="form-control" type="text" placeholder="Bootstrap">
+          </div>
         </div>
       </form>
+      <div class="help-block">original sizing won't work, use <code>input-group</code> instead</div>
     </div><!-- /.bs-example -->
 
 
