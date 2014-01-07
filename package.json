@@ -1,7 +1,7 @@
 {
   "name": "typehead.js-bootstrap3.less",
   "description": "Bootstrap3 style for typeahead.js using Bootstrap 3 mixins and variables",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "keywords": [
     "less",
     "bootstrap",
