@@ -43,6 +43,14 @@
     .has-success &{
       .typeahead-form-control(@state-success-text);
     }
+
+    //disabled status
+    &[disabled],
+    &[readonly],
+    fieldset[disabled] & {
+      cursor: not-allowed;
+      background-color: @input-bg-disabled;
+    }
   }
 
   //border
