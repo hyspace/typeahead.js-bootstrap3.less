@@ -1,5 +1,5 @@
 /*
- * typehead.js-bootstrap3.less 0.1.3
+ * typehead.js-bootstrap3.less 0.1.4
  * https://github.com/hyspace/typehead.js-bootstrap3.less
  *
  * Licensed under the MIT license:
@@ -42,14 +42,6 @@
     }
     .has-success &{
       .typeahead-form-control(@state-success-text);
-    }
-
-    //disabled status
-    &[disabled],
-    &[readonly],
-    fieldset[disabled] & {
-      cursor: not-allowed;
-      background-color: @input-bg-disabled;
     }
   }
 
@@ -107,6 +99,14 @@
 }
 .twitter-typeahead .tt-query {
   z-index: 2;
+  //disabled status
+  //overwrite inline styles of .tt-query
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    background-color: @input-bg-disabled!important;
+  }
 }
 
 
