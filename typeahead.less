@@ -68,6 +68,9 @@
   .input-group.input-group-sm .twitter-typeahead:only-child &{
     border-radius:@border-radius-small;
   }
+  .input-group.input-group-sm .twitter-typeahead:not(:first-child):not(:last-child) &{
+    border-radius: 0px;
+  }
 
   //sizing - large:size and border
   .input-group.input-group-lg .twitter-typeahead &{
@@ -83,6 +86,9 @@
   }
   .input-group.input-group-lg .twitter-typeahead:only-child &{
     border-radius:@border-radius-large;
+  }
+  .input-group.input-group-lg .twitter-typeahead:not(:first-child):not(:last-child) &{
+    border-radius: 0px;
   }
 }
 
