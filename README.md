@@ -36,7 +36,7 @@ example:
     //typeahead
     @import "typeahead.less";
 
-#### -if you have less source files of Bootstrap in your project:
+#### -if you have no less source files of Bootstrap in your project:
 
 link compiled css file to your site.
 
@@ -44,3 +44,5 @@ link compiled css file to your site.
 ===========================
 
 This repo is here because this [Issue](https://github.com/twitter/typeahead.js/issues/378), and is based on the solution of [@kuroe](http://jsfiddle.net/kuroe/qrtua/14/)
+
+Also thanks for @emrah and @JoshAshby 's contribution

@@ -1,5 +1,5 @@
 /*
- * typehead.js-bootstrap3.less 0.1.4
+ * typehead.js-bootstrap3.less 0.1.5
  * https://github.com/hyspace/typehead.js-bootstrap3.less
  *
  * Licensed under the MIT license:
@@ -17,6 +17,7 @@
   }
 }
 
+//main styles for control
 .tt-query,
 .tt-hint {
   .twitter-typeahead &{
@@ -69,7 +70,7 @@
     border-radius:@border-radius-small;
   }
   .input-group.input-group-sm .twitter-typeahead:not(:first-child):not(:last-child) &{
-    border-radius: 0px;
+    border-radius: 0;
   }
 
   //sizing - large:size and border
@@ -88,7 +89,7 @@
     border-radius:@border-radius-large;
   }
   .input-group.input-group-lg .twitter-typeahead:not(:first-child):not(:last-child) &{
-    border-radius: 0px;
+    border-radius: 0;
   }
 }
 
@@ -114,7 +115,7 @@
   }
 }
 
-
+//dropdown styles
 .tt-dropdown-menu {
   //dropdown menu
   position: absolute;

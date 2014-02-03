@@ -1,5 +1,5 @@
 /*
- * typehead.js-bootstrap3.less 0.1.4
+ * typehead.js-bootstrap3.less 0.1.5
  * https://github.com/hyspace/typehead.js-bootstrap3.less
  *
  * Licensed under the MIT license:
@@ -122,7 +122,7 @@ textarea.input-group.input-group-sm .twitter-typeahead .tt-hint {
 }
 .input-group.input-group-sm .twitter-typeahead:not(:first-child):not(:last-child) .tt-query,
 .input-group.input-group-sm .twitter-typeahead:not(:first-child):not(:last-child) .tt-hint {
-  border-radius: 0px;
+  border-radius: 0;
 }
 .input-group.input-group-lg .twitter-typeahead .tt-query,
 .input-group.input-group-lg .twitter-typeahead .tt-hint {
@@ -161,14 +161,13 @@ textarea.input-group.input-group-lg .twitter-typeahead .tt-hint {
 }
 .input-group.input-group-lg .twitter-typeahead:not(:first-child):not(:last-child) .tt-query,
 .input-group.input-group-lg .twitter-typeahead:not(:first-child):not(:last-child) .tt-hint {
-  border-radius: 0px;
+  border-radius: 0;
 }
 .twitter-typeahead {
   width: 100%;
 }
 .twitter-typeahead .tt-hint {
   color: #999999;
-  z-index: 1;
   border: 1px solid transparent;
 }
 .twitter-typeahead .tt-query {
@@ -210,13 +209,13 @@ fieldset[disabled] .twitter-typeahead .tt-query {
   color: #333333;
   white-space: nowrap;
 }
-.tt-dropdown-menu .tt-suggestion.tt-is-under-cursor {
+.tt-dropdown-menu .tt-suggestion.tt-cursor {
   text-decoration: none;
   outline: 0;
   background-color: #428bca;
   color: #ffffff;
 }
-.tt-dropdown-menu .tt-suggestion.tt-is-under-cursor a {
+.tt-dropdown-menu .tt-suggestion.tt-cursor a {
   color: #ffffff;
 }
 .tt-dropdown-menu .tt-suggestion p {
