@@ -18,6 +18,13 @@ Using mixins and variables provided by Boostrap 3, This stylesheet is useful whe
 
 **This stylesheet requires `mixins.less` and `variables.less` of Bootstrap 3. If you are not using Boostrap's mixins and variables in your site, you can use compiled css file with default colors and sizings of Boostrap instead.**
 
+### Styles
+===========================
+
+There is a difference between typeahead dropdown menu and Bootstrap 3 `dropdown`:
+
+`background-color` is set to `@dropdown-link-active-bg` instead of `@dropdown-link-hover-bg`
+
 ### How to use
 ===========================
 
