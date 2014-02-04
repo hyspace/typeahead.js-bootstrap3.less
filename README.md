@@ -1,5 +1,4 @@
 # typeahead.js-bootstrap3.less
-===========================
 
 [![Bower version](https://badge.fury.io/bo/typeahead.js-bootstrap3.less.png)](http://badge.fury.io/bo/typeahead.js-bootstrap3.less)
 [![Build Status](https://travis-ci.org/hyspace/typeahead.js-bootstrap3.less.png?branch=develop)](https://travis-ci.org/hyspace/typeahead.js-bootstrap3.less)
@@ -27,6 +26,8 @@ There is a difference between typeahead dropdown menu and Bootstrap 3 `dropdown`
 `background-color` is set to `@dropdown-link-active-bg` instead of `@dropdown-link-hover-bg`
 
 ## How to use
+
+install with bower: `bower install typeahead.js-bootstrap3.less`.
 
 #### -if you have less source files of Bootstrap in your project:
 
