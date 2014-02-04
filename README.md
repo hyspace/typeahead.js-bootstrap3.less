@@ -5,9 +5,9 @@ Bootstrap3 style for [typeahead.js](https://github.com/twitter/typeahead.js) usi
 
 Based on the solution of [@kuroe](https://github.com/kuroe)
 
-Tested on Chrome Mac OSX, with Bootstrap 3.0.2
+Tested on PhantomJS, with `Bootstrap 3.1.0` and `typeahead 0.9.3`
 
-[See Tests Here](http://little33.com/typeahead.js-bootstrap3.less/test.html)
+NOTICE: Not compatible with `typeahead 0.10.0` yet.
 
 ### Introduction
 ===========================
