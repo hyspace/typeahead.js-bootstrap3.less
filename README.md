@@ -10,7 +10,6 @@ Tested on PhantomJS, with `Bootstrap 3.1.0` and `typeahead 0.9.3`
 NOTICE: Not compatible with `typeahead 0.10.0` yet.
 
 ### Introduction
-===========================
 
 This is a stylesheet for [typeahead.js](https://github.com/twitter/typeahead.js), which makes your "typeaheaded" input control looks same as [Bootstrap 3](https://github.com/twbs/bootstrap/)'s.
 
@@ -19,14 +18,12 @@ Using mixins and variables provided by Boostrap 3, This stylesheet is useful whe
 **This stylesheet requires `mixins.less` and `variables.less` of Bootstrap 3. If you are not using Boostrap's mixins and variables in your site, you can use compiled css file with default colors and sizings of Boostrap instead.**
 
 ### Styles
-===========================
 
 There is a difference between typeahead dropdown menu and Bootstrap 3 `dropdown`:
 
 `background-color` is set to `@dropdown-link-active-bg` instead of `@dropdown-link-hover-bg`
 
 ### How to use
-===========================
 
 #### -if you have less source files of Bootstrap in your project:
 
@@ -48,7 +45,6 @@ example:
 link compiled css file to your site.
 
 ### Thanks
-===========================
 
 This repo is here because this [Issue](https://github.com/twitter/typeahead.js/issues/378), and is based on the solution of [@kuroe](http://jsfiddle.net/kuroe/qrtua/14/)
 
