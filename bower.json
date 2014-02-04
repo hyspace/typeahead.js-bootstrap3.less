@@ -1,0 +1,20 @@
+{
+  "name": "typehead.js-bootstrap3.less",
+  "version": "0.1.5",
+  "main": [
+    "typeahead.css",
+    "typeahead.less"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.0"
+  },
+  "ignore":[
+    "bootstrap",
+    "tests",
+    ".gitignore",
+    ".gitmodules",
+    ".travis.yml",
+    "*.coffee",
+    "package.json"
+  ]
+}
