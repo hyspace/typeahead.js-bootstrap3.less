@@ -1,4 +1,4 @@
-typeahead.js-bootstrap3.less
+typeahead.js-bootstrap3.less [![Build Status](https://travis-ci.org/hyspace/typeahead.js-bootstrap3.less.png?branch=develop)](https://travis-ci.org/hyspace/typeahead.js-bootstrap3.less)
 ===========================
 
 Bootstrap3 style for [typeahead.js](https://github.com/twitter/typeahead.js) using [Bootstrap 3](https://github.com/twbs/bootstrap/) mixins and variables.
