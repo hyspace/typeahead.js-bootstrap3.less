@@ -5,7 +5,7 @@
     small:'3px'
     none:'0px'
   height:
-    large:'45px' # input group is different from single input
+    large:'46px'
     base:'34px'
     small:'30px'
   backgroundColor:
