@@ -7,90 +7,64 @@
  */
 .input-group {
   width: 100%;
-}
-.twitter-typeahead .tt-query,
-.twitter-typeahead .tt-hint {
-  margin: 0;
-  width: 100%;
-  color: #555555;
-  vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  height: 34px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-}
-select.twitter-typeahead .tt-query,
-select.twitter-typeahead .tt-hint {
-  height: 34px;
-  line-height: 34px;
-}
-textarea.twitter-typeahead .tt-query,
-textarea.twitter-typeahead .tt-hint,
-select[multiple].twitter-typeahead .tt-query,
-select[multiple].twitter-typeahead .tt-hint {
-  height: auto;
-}
-.twitter-typeahead .tt-query:focus,
-.twitter-typeahead .tt-hint:focus {
-  border-color: #66afe9;
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  line-height: 0.7;
 }
 .has-warning .twitter-typeahead .tt-query,
+.has-warning .twitter-typeahead .tt-input,
 .has-warning .twitter-typeahead .tt-hint {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .has-warning .twitter-typeahead .tt-query:focus,
+.has-warning .twitter-typeahead .tt-input:focus,
 .has-warning .twitter-typeahead .tt-hint:focus {
   border-color: #66512c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
 }
 .has-error .twitter-typeahead .tt-query,
+.has-error .twitter-typeahead .tt-input,
 .has-error .twitter-typeahead .tt-hint {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .has-error .twitter-typeahead .tt-query:focus,
+.has-error .twitter-typeahead .tt-input:focus,
 .has-error .twitter-typeahead .tt-hint:focus {
   border-color: #843534;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
 }
 .has-success .twitter-typeahead .tt-query,
+.has-success .twitter-typeahead .tt-input,
 .has-success .twitter-typeahead .tt-hint {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .has-success .twitter-typeahead .tt-query:focus,
+.has-success .twitter-typeahead .tt-input:focus,
 .has-success .twitter-typeahead .tt-hint:focus {
   border-color: #2b542c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
 }
 .input-group .twitter-typeahead:first-child .tt-query,
+.input-group .twitter-typeahead:first-child .tt-input,
 .input-group .twitter-typeahead:first-child .tt-hint {
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
 }
 .input-group .twitter-typeahead:last-child .tt-query,
+.input-group .twitter-typeahead:last-child .tt-input,
 .input-group .twitter-typeahead:last-child .tt-hint {
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
 }
 .input-group.input-group-sm .twitter-typeahead .tt-query,
+.input-group.input-group-sm .twitter-typeahead .tt-input,
 .input-group.input-group-sm .twitter-typeahead .tt-hint {
   height: 30px;
   padding: 5px 10px;
@@ -99,21 +73,26 @@ select[multiple].twitter-typeahead .tt-hint {
   border-radius: 3px;
 }
 select.input-group.input-group-sm .twitter-typeahead .tt-query,
+select.input-group.input-group-sm .twitter-typeahead .tt-input,
 select.input-group.input-group-sm .twitter-typeahead .tt-hint {
   height: 30px;
   line-height: 30px;
 }
 textarea.input-group.input-group-sm .twitter-typeahead .tt-query,
+textarea.input-group.input-group-sm .twitter-typeahead .tt-input,
 textarea.input-group.input-group-sm .twitter-typeahead .tt-hint,
 select[multiple].input-group.input-group-sm .twitter-typeahead .tt-query,
+select[multiple].input-group.input-group-sm .twitter-typeahead .tt-input,
 select[multiple].input-group.input-group-sm .twitter-typeahead .tt-hint {
   height: auto;
 }
 .input-group.input-group-sm .twitter-typeahead:not(:first-child):not(:last-child) .tt-query,
+.input-group.input-group-sm .twitter-typeahead:not(:first-child):not(:last-child) .tt-input,
 .input-group.input-group-sm .twitter-typeahead:not(:first-child):not(:last-child) .tt-hint {
   border-radius: 0;
 }
 .input-group.input-group-sm .twitter-typeahead:first-child .tt-query,
+.input-group.input-group-sm .twitter-typeahead:first-child .tt-input,
 .input-group.input-group-sm .twitter-typeahead:first-child .tt-hint {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
@@ -121,6 +100,7 @@ select[multiple].input-group.input-group-sm .twitter-typeahead .tt-hint {
   border-top-right-radius: 0;
 }
 .input-group.input-group-sm .twitter-typeahead:last-child .tt-query,
+.input-group.input-group-sm .twitter-typeahead:last-child .tt-input,
 .input-group.input-group-sm .twitter-typeahead:last-child .tt-hint {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -128,10 +108,12 @@ select[multiple].input-group.input-group-sm .twitter-typeahead .tt-hint {
   border-top-right-radius: 3px;
 }
 .input-group.input-group-sm .twitter-typeahead:only-child .tt-query,
+.input-group.input-group-sm .twitter-typeahead:only-child .tt-input,
 .input-group.input-group-sm .twitter-typeahead:only-child .tt-hint {
   border-radius: 3px;
 }
 .input-group.input-group-lg .twitter-typeahead .tt-query,
+.input-group.input-group-lg .twitter-typeahead .tt-input,
 .input-group.input-group-lg .twitter-typeahead .tt-hint {
   height: 46px;
   padding: 10px 16px;
@@ -140,21 +122,26 @@ select[multiple].input-group.input-group-sm .twitter-typeahead .tt-hint {
   border-radius: 6px;
 }
 select.input-group.input-group-lg .twitter-typeahead .tt-query,
+select.input-group.input-group-lg .twitter-typeahead .tt-input,
 select.input-group.input-group-lg .twitter-typeahead .tt-hint {
   height: 46px;
   line-height: 46px;
 }
 textarea.input-group.input-group-lg .twitter-typeahead .tt-query,
+textarea.input-group.input-group-lg .twitter-typeahead .tt-input,
 textarea.input-group.input-group-lg .twitter-typeahead .tt-hint,
 select[multiple].input-group.input-group-lg .twitter-typeahead .tt-query,
+select[multiple].input-group.input-group-lg .twitter-typeahead .tt-input,
 select[multiple].input-group.input-group-lg .twitter-typeahead .tt-hint {
   height: auto;
 }
 .input-group.input-group-lg .twitter-typeahead:not(:first-child):not(:last-child) .tt-query,
+.input-group.input-group-lg .twitter-typeahead:not(:first-child):not(:last-child) .tt-input,
 .input-group.input-group-lg .twitter-typeahead:not(:first-child):not(:last-child) .tt-hint {
   border-radius: 0;
 }
 .input-group.input-group-lg .twitter-typeahead:first-child .tt-query,
+.input-group.input-group-lg .twitter-typeahead:first-child .tt-input,
 .input-group.input-group-lg .twitter-typeahead:first-child .tt-hint {
   border-bottom-left-radius: 6px;
   border-top-left-radius: 6px;
@@ -162,6 +149,7 @@ select[multiple].input-group.input-group-lg .twitter-typeahead .tt-hint {
   border-top-right-radius: 0;
 }
 .input-group.input-group-lg .twitter-typeahead:last-child .tt-query,
+.input-group.input-group-lg .twitter-typeahead:last-child .tt-input,
 .input-group.input-group-lg .twitter-typeahead:last-child .tt-hint {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -169,22 +157,29 @@ select[multiple].input-group.input-group-lg .twitter-typeahead .tt-hint {
   border-top-right-radius: 6px;
 }
 .input-group.input-group-lg .twitter-typeahead:only-child .tt-query,
+.input-group.input-group-lg .twitter-typeahead:only-child .tt-input,
 .input-group.input-group-lg .twitter-typeahead:only-child .tt-hint {
   border-radius: 6px;
 }
 .twitter-typeahead {
   width: 100%;
 }
+.input-group .twitter-typeahead {
+  display: block!important;
+}
 .twitter-typeahead .tt-hint {
   color: #999999;
-  border: 1px solid transparent;
 }
-.twitter-typeahead .tt-query {
+.twitter-typeahead .tt-query,
+.twitter-typeahead .tt-input {
   z-index: 2;
 }
 .twitter-typeahead .tt-query[disabled],
+.twitter-typeahead .tt-input[disabled],
 .twitter-typeahead .tt-query[readonly],
-fieldset[disabled] .twitter-typeahead .tt-query {
+.twitter-typeahead .tt-input[readonly],
+fieldset[disabled] .twitter-typeahead .tt-query,
+fieldset[disabled] .twitter-typeahead .tt-input {
   cursor: not-allowed;
   background-color: #eeeeee !important;
 }
@@ -218,15 +213,15 @@ fieldset[disabled] .twitter-typeahead .tt-query {
   color: #333333;
   white-space: nowrap;
 }
-.tt-dropdown-menu .tt-suggestion.tt-cursor,
-.tt-dropdown-menu .tt-suggestion.tt-is-under-cursor {
+.tt-dropdown-menu .tt-suggestion.tt-is-under-cursor,
+.tt-dropdown-menu .tt-suggestion.tt-cursor {
   text-decoration: none;
   outline: 0;
   background-color: #428bca;
   color: #ffffff;
 }
-.tt-dropdown-menu .tt-suggestion.tt-cursor a,
-.tt-dropdown-menu .tt-suggestion.tt-is-under-cursor a {
+.tt-dropdown-menu .tt-suggestion.tt-is-under-cursor a,
+.tt-dropdown-menu .tt-suggestion.tt-cursor a {
   color: #ffffff;
 }
 .tt-dropdown-menu .tt-suggestion p {

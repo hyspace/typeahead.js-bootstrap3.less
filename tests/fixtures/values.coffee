@@ -1,4 +1,9 @@
 @fixtures =
+  class:
+    hint:'.tt-hint'
+    dropdown:'.tt-dropdown-menu'
+    cursor:'.tt-cursor'
+    addOn: '.input-group-addon'
   borderRadius:
     large:'6px'
     base:'4px'

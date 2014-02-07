@@ -20,25 +20,14 @@
 .input-group{
   //fix input group width bug
   width: 100%;
+  line-height: 1 / @line-height-base;
 }
 
 //main styles for control
 .tt-query,
+.tt-input,
 .tt-hint {
   .twitter-typeahead &{
-    // base style for control and hint
-    margin: 0;
-    width: 100%;
-    color: #555555;
-    vertical-align: middle;
-    background-color: @input-bg;
-    border: 1px solid @input-border;
-    border-radius: @input-border-radius;
-    .input-size(@input-height-base; @padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
-    .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
-    .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
-    .form-control-focus(@input-border-focus);
-
     //validation states
     .has-warning &{
       .typeahead-form-control(@state-warning-text);
@@ -101,14 +90,19 @@
 //for wrapper
 .twitter-typeahead {
   width: 100%;
+  .input-group &{
+    //fix bug with typeahead.js 0.10.0 that add-ons have wrong height
+    //overwrite `display:inline-block` style
+    display: block!important;
+  }
 }
 
 //particular style for each other
 .twitter-typeahead .tt-hint {
   color: @text-muted;//color - hint
-  border: 1px solid transparent;
 }
-.twitter-typeahead .tt-query {
+.twitter-typeahead .tt-query,
+.twitter-typeahead .tt-input {
   z-index: 2;
   //disabled status
   //overwrite inline styles of .tt-query
@@ -152,8 +146,8 @@
     color: @dropdown-link-color;
     white-space: nowrap;
 
-    &.tt-cursor,
-    &.tt-is-under-cursor {
+    &.tt-is-under-cursor,
+    &.tt-cursor {
       //item selected
       text-decoration: none;
       outline: 0;

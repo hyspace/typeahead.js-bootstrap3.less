@@ -6,14 +6,10 @@ describe 'group', ->
 
     beforeEach ->
       loadFixtures("dom.html");
-      input = $('#test6').typeahead
-        name: 'repos'
-        local: ['Bootstrap 3', 'Bootstrap 2.3.2', 'Bootstrap by Twitter']
-
-      input.inputChar().down()
+      input = initTypeahead('#test5')
       parent = input.parent()
-      hint = parent.find('.tt-hint')
-      dropdown = parent.find('.tt-dropdown-menu')
+      hint = parent.find(fixtures.class.hint)
+      dropdown = parent.find(fixtures.class.dropdown)
 
     # border-radius
     it 'input should have border-radius', ->
@@ -31,11 +27,11 @@ describe 'group', ->
         "border-bottom-left-radius":fixtures.borderRadius.none
 
     # height
-    it 'input should have height 34px', ->
+    it 'input should have height `basic`', ->
       expect(input).toHaveCss
         "height":fixtures.height.base
 
-    it 'hint should have height 34px', ->
+    it 'hint should have height `basic`', ->
       expect(hint).toHaveCss
         "height":fixtures.height.base
 
@@ -46,15 +42,10 @@ describe 'group', ->
 
     beforeEach ->
       loadFixtures("dom.html");
-      $('#test6').closest('.input-group').addClass('input-group-lg')
-      input = $('#test6').typeahead
-        name: 'repos'
-        local: ['Bootstrap 3', 'Bootstrap 2.3.2', 'Bootstrap by Twitter']
-
-      input.inputChar().down()
+      input = initTypeahead('#test6')
       parent = input.parent()
-      hint = parent.find('.tt-hint')
-      dropdown = parent.find('.tt-dropdown-menu')
+      hint = parent.find(fixtures.class.hint)
+      dropdown = parent.find(fixtures.class.dropdown)
 
     # border-radius
     it 'input should have border-radius', ->
@@ -72,14 +63,15 @@ describe 'group', ->
         "border-bottom-left-radius":fixtures.borderRadius.none
 
     # height
-    it 'input should have height 45px', ->
+    it 'input should have height `large`', ->
       expect(input).toHaveCss
         "height":fixtures.height.large
 
-    it 'hint should have height 45px', ->
+    it 'hint should have height `large`', ->
       expect(hint).toHaveCss
         "height":fixtures.height.large
 
+    # add-on h
   describe 'left small', ->
     input = null
     hint = null
@@ -87,15 +79,10 @@ describe 'group', ->
 
     beforeEach ->
       loadFixtures("dom.html");
-      $('#test6').closest('.input-group').addClass('input-group-sm')
-      input = $('#test6').typeahead
-        name: 'repos'
-        local: ['Bootstrap 3', 'Bootstrap 2.3.2', 'Bootstrap by Twitter']
-
-      input.inputChar().down()
+      input = initTypeahead('#test7')
       parent = input.parent()
-      hint = parent.find('.tt-hint')
-      dropdown = parent.find('.tt-dropdown-menu')
+      hint = parent.find(fixtures.class.hint)
+      dropdown = parent.find(fixtures.class.dropdown)
 
     # border-radius
     it 'input should have border-radius', ->
@@ -113,11 +100,11 @@ describe 'group', ->
         "border-bottom-left-radius":fixtures.borderRadius.none
 
     # height
-    it 'input should have height 30px', ->
+    it 'input should have height `small`', ->
       expect(input).toHaveCss
         "height":fixtures.height.small
 
-    it 'hint should have height 30px', ->
+    it 'hint should have height `small`', ->
       expect(hint).toHaveCss
         "height":fixtures.height.small
 
@@ -128,14 +115,10 @@ describe 'group', ->
 
     beforeEach ->
       loadFixtures("dom.html");
-      input = $('#test7').typeahead
-        name: 'repos'
-        local: ['Bootstrap 3', 'Bootstrap 2.3.2', 'Bootstrap by Twitter']
-
-      input.inputChar().down()
+      input = initTypeahead('#test8')
       parent = input.parent()
-      hint = parent.find('.tt-hint')
-      dropdown = parent.find('.tt-dropdown-menu')
+      hint = parent.find(fixtures.class.hint)
+      dropdown = parent.find(fixtures.class.dropdown)
 
     # border-radius
     it 'input should have border-radius', ->
@@ -153,11 +136,11 @@ describe 'group', ->
         "border-bottom-left-radius":fixtures.borderRadius.base
 
     # height
-    it 'input should have height 34px', ->
+    it 'input should have height `basic`', ->
       expect(input).toHaveCss
         "height":fixtures.height.base
 
-    it 'hint should have height 34px', ->
+    it 'hint should have height `basic`', ->
       expect(hint).toHaveCss
         "height":fixtures.height.base
 
@@ -168,15 +151,10 @@ describe 'group', ->
 
     beforeEach ->
       loadFixtures("dom.html");
-      $('#test7').closest('.input-group').addClass('input-group-lg')
-      input = $('#test7').typeahead
-        name: 'repos'
-        local: ['Bootstrap 3', 'Bootstrap 2.3.2', 'Bootstrap by Twitter']
-
-      input.inputChar().down()
+      input = initTypeahead('#test9')
       parent = input.parent()
-      hint = parent.find('.tt-hint')
-      dropdown = parent.find('.tt-dropdown-menu')
+      hint = parent.find(fixtures.class.hint)
+      dropdown = parent.find(fixtures.class.dropdown)
 
     # border-radius
     it 'input should have border-radius', ->
@@ -194,11 +172,11 @@ describe 'group', ->
         "border-bottom-left-radius":fixtures.borderRadius.large
 
     # height
-    it 'input should have height 45px', ->
+    it 'input should have height `large`', ->
       expect(input).toHaveCss
         "height":fixtures.height.large
 
-    it 'hint should have height 45px', ->
+    it 'hint should have height `large`', ->
       expect(hint).toHaveCss
         "height":fixtures.height.large
 
@@ -209,15 +187,10 @@ describe 'group', ->
 
     beforeEach ->
       loadFixtures("dom.html");
-      $('#test7').closest('.input-group').addClass('input-group-sm')
-      input = $('#test7').typeahead
-        name: 'repos'
-        local: ['Bootstrap 3', 'Bootstrap 2.3.2', 'Bootstrap by Twitter']
-
-      input.inputChar().down()
+      input = initTypeahead('#test10')
       parent = input.parent()
-      hint = parent.find('.tt-hint')
-      dropdown = parent.find('.tt-dropdown-menu')
+      hint = parent.find(fixtures.class.hint)
+      dropdown = parent.find(fixtures.class.dropdown)
 
     # border-radius
     it 'input should have border-radius', ->
@@ -235,11 +208,11 @@ describe 'group', ->
         "border-bottom-left-radius":fixtures.borderRadius.small
 
     # height
-    it 'input should have height 30px', ->
+    it 'input should have height `small`', ->
       expect(input).toHaveCss
         "height":fixtures.height.small
 
-    it 'hint should have height 30px', ->
+    it 'hint should have height `small`', ->
       expect(hint).toHaveCss
         "height":fixtures.height.small
 
@@ -250,14 +223,10 @@ describe 'group', ->
 
     beforeEach ->
       loadFixtures("dom.html");
-      input = $('#test8').typeahead
-        name: 'repos'
-        local: ['Bootstrap 3', 'Bootstrap 2.3.2', 'Bootstrap by Twitter']
-
-      input.inputChar().down()
+      input = initTypeahead('#test11')
       parent = input.parent()
-      hint = parent.find('.tt-hint')
-      dropdown = parent.find('.tt-dropdown-menu')
+      hint = parent.find(fixtures.class.hint)
+      dropdown = parent.find(fixtures.class.dropdown)
 
     # border-radius
     it 'input should have border-radius', ->
@@ -275,11 +244,11 @@ describe 'group', ->
         "border-bottom-left-radius":fixtures.borderRadius.none
 
     # height
-    it 'input should have height 34px', ->
+    it 'input should have height `basic`', ->
       expect(input).toHaveCss
         "height":fixtures.height.base
 
-    it 'hint should have height 34px', ->
+    it 'hint should have height `basic`', ->
       expect(hint).toHaveCss
         "height":fixtures.height.base
 
@@ -290,15 +259,10 @@ describe 'group', ->
 
     beforeEach ->
       loadFixtures("dom.html");
-      $('#test8').closest('.input-group').addClass('input-group-lg')
-      input = $('#test8').typeahead
-        name: 'repos'
-        local: ['Bootstrap 3', 'Bootstrap 2.3.2', 'Bootstrap by Twitter']
-
-      input.inputChar().down()
+      input = initTypeahead('#test12')
       parent = input.parent()
-      hint = parent.find('.tt-hint')
-      dropdown = parent.find('.tt-dropdown-menu')
+      hint = parent.find(fixtures.class.hint)
+      dropdown = parent.find(fixtures.class.dropdown)
 
     # border-radius
     it 'input should have border-radius', ->
@@ -316,11 +280,11 @@ describe 'group', ->
         "border-bottom-left-radius":fixtures.borderRadius.none
 
     # height
-    it 'input should have height 45px', ->
+    it 'input should have height `large`', ->
       expect(input).toHaveCss
         "height":fixtures.height.large
 
-    it 'hint should have height 45px', ->
+    it 'hint should have height `large`', ->
       expect(hint).toHaveCss
         "height":fixtures.height.large
 
@@ -331,15 +295,10 @@ describe 'group', ->
 
     beforeEach ->
       loadFixtures("dom.html");
-      $('#test8').closest('.input-group').addClass('input-group-sm')
-      input = $('#test8').typeahead
-        name: 'repos'
-        local: ['Bootstrap 3', 'Bootstrap 2.3.2', 'Bootstrap by Twitter']
-
-      input.inputChar().down()
+      input = initTypeahead('#test13')
       parent = input.parent()
-      hint = parent.find('.tt-hint')
-      dropdown = parent.find('.tt-dropdown-menu')
+      hint = parent.find(fixtures.class.hint)
+      dropdown = parent.find(fixtures.class.dropdown)
 
     # border-radius
     it 'input should have border-radius', ->
@@ -357,11 +316,11 @@ describe 'group', ->
         "border-bottom-left-radius":fixtures.borderRadius.none
 
     # height
-    it 'input should have height 30px', ->
+    it 'input should have height `small`', ->
       expect(input).toHaveCss
         "height":fixtures.height.small
 
-    it 'hint should have height 30px', ->
+    it 'hint should have height `small`', ->
       expect(hint).toHaveCss
         "height":fixtures.height.small
 
@@ -372,14 +331,10 @@ describe 'group', ->
 
     beforeEach ->
       loadFixtures("dom.html");
-      input = $('#test9').typeahead
-        name: 'repos'
-        local: ['Bootstrap 3', 'Bootstrap 2.3.2', 'Bootstrap by Twitter']
-
-      input.inputChar().down()
+      input = initTypeahead('#test14')
       parent = input.parent()
-      hint = parent.find('.tt-hint')
-      dropdown = parent.find('.tt-dropdown-menu')
+      hint = parent.find(fixtures.class.hint)
+      dropdown = parent.find(fixtures.class.dropdown)
 
     # border-radius
     it 'input should have border-radius', ->
@@ -397,11 +352,11 @@ describe 'group', ->
         "border-bottom-left-radius":fixtures.borderRadius.base
 
     # height
-    it 'input should have height 34px', ->
+    it 'input should have height `basic`', ->
       expect(input).toHaveCss
         "height":fixtures.height.base
 
-    it 'hint should have height 34px', ->
+    it 'hint should have height `basic`', ->
       expect(hint).toHaveCss
         "height":fixtures.height.base
 
@@ -412,15 +367,10 @@ describe 'group', ->
 
     beforeEach ->
       loadFixtures("dom.html");
-      $('#test9').closest('.input-group').addClass('input-group-lg')
-      input = $('#test9').typeahead
-        name: 'repos'
-        local: ['Bootstrap 3', 'Bootstrap 2.3.2', 'Bootstrap by Twitter']
-
-      input.inputChar().down()
+      input = initTypeahead('#test15')
       parent = input.parent()
-      hint = parent.find('.tt-hint')
-      dropdown = parent.find('.tt-dropdown-menu')
+      hint = parent.find(fixtures.class.hint)
+      dropdown = parent.find(fixtures.class.dropdown)
 
     # border-radius
     it 'input should have border-radius', ->
@@ -438,11 +388,11 @@ describe 'group', ->
         "border-bottom-left-radius":fixtures.borderRadius.large
 
     # height
-    it 'input should have height 45px', ->
+    it 'input should have height `large`', ->
       expect(input).toHaveCss
         "height":fixtures.height.large
 
-    it 'hint should have height 45px', ->
+    it 'hint should have height `large`', ->
       expect(hint).toHaveCss
         "height":fixtures.height.large
 
@@ -453,15 +403,10 @@ describe 'group', ->
 
     beforeEach ->
       loadFixtures("dom.html");
-      $('#test9').closest('.input-group').addClass('input-group-sm')
-      input = $('#test9').typeahead
-        name: 'repos'
-        local: ['Bootstrap 3', 'Bootstrap 2.3.2', 'Bootstrap by Twitter']
-
-      input.inputChar().down()
+      input = initTypeahead('#test16')
       parent = input.parent()
-      hint = parent.find('.tt-hint')
-      dropdown = parent.find('.tt-dropdown-menu')
+      hint = parent.find(fixtures.class.hint)
+      dropdown = parent.find(fixtures.class.dropdown)
 
     # border-radius
     it 'input should have border-radius', ->
@@ -479,10 +424,10 @@ describe 'group', ->
         "border-bottom-left-radius":fixtures.borderRadius.small
 
     # height
-    it 'input should have height 30px', ->
+    it 'input should have height `small`', ->
       expect(input).toHaveCss
         "height":fixtures.height.small
 
-    it 'hint should have height 30px', ->
+    it 'hint should have height `small`', ->
       expect(hint).toHaveCss
         "height":fixtures.height.small

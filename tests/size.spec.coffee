@@ -6,14 +6,10 @@ describe 'size', ->
 
     beforeEach ->
       loadFixtures("dom.html");
-      input = $('#test2').typeahead
-        name: 'repos'
-        local: ['Bootstrap 3', 'Bootstrap 2.3.2', 'Bootstrap by Twitter']
-
-      input.inputChar().down()
+      input = initTypeahead('#test2')
       parent = input.parent()
-      hint = parent.find('.tt-hint')
-      dropdown = parent.find('.tt-dropdown-menu')
+      hint = parent.find(fixtures.class.hint)
+      dropdown = parent.find(fixtures.class.dropdown)
 
     # border-radius
     it 'input should have border-radius', ->
@@ -38,11 +34,11 @@ describe 'size', ->
         "border-bottom-left-radius":fixtures.borderRadius.large
 
     # height
-    it 'input should have height 46px', ->
+    it 'input should have height `large`', ->
       expect(input).toHaveCss
         "height":fixtures.height.large
 
-    it 'hint should have height 46px', ->
+    it 'hint should have height `large`', ->
       expect(hint).toHaveCss
         "height":fixtures.height.large
 
@@ -58,14 +54,10 @@ describe 'size', ->
     dropdown = null
     beforeEach ->
       loadFixtures("dom.html");
-      input = $('#test3').typeahead
-        name: 'repos'
-        local: ['Bootstrap 3', 'Bootstrap 2.3.2', 'Bootstrap by Twitter']
-
-      input.inputChar().down()
+      input = initTypeahead('#test3')
       parent = input.parent()
-      hint = parent.find('.tt-hint')
-      dropdown = parent.find('.tt-dropdown-menu')
+      hint = parent.find(fixtures.class.hint)
+      dropdown = parent.find(fixtures.class.dropdown)
 
     # border-radius
     it 'input should have border-radius', ->
@@ -90,11 +82,11 @@ describe 'size', ->
         "border-bottom-left-radius":fixtures.borderRadius.small
 
     # height
-    it 'input should have height 30px', ->
+    it 'input should have height `small`', ->
       expect(input).toHaveCss
         "height":fixtures.height.small
 
-    it 'hint should have height 30px', ->
+    it 'hint should have height `small`', ->
       expect(hint).toHaveCss
         "height":fixtures.height.small
 
