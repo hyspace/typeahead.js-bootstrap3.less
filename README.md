@@ -7,9 +7,11 @@ Bootstrap3 style for [typeahead.js](https://github.com/twitter/typeahead.js) usi
 
 Based on the solution of [@kuroe](https://github.com/kuroe)
 
-Tested on PhantomJS, with `Bootstrap 3.1.0` and `typeahead 0.9.3`
+Tested on PhantomJS, with `Bootstrap 3.1.0` and `typeahead.js 0.10.0`
 
-NOTICE: Not compatible with `typeahead 0.10.0` yet.
+## version
+
+For `typeahead.js` under `0.10.0`, use `0.1.x` instead.
 
 ## Introduction
 

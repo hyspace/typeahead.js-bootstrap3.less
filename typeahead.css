@@ -7,7 +7,6 @@
  */
 .input-group {
   width: 100%;
-  line-height: 0.7;
 }
 .has-warning .twitter-typeahead .tt-query,
 .has-warning .twitter-typeahead .tt-input,
@@ -163,9 +162,10 @@ select[multiple].input-group.input-group-lg .twitter-typeahead .tt-hint {
 }
 .twitter-typeahead {
   width: 100%;
+  float: left;
 }
 .input-group .twitter-typeahead {
-  display: block!important;
+  display: table-cell !important;
 }
 .twitter-typeahead .tt-hint {
   color: #999999;

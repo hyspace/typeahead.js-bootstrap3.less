@@ -19,13 +19,13 @@ module.exports = (config) ->
       'tests/vendor/*.js',
       'tests/helpers/*.js',
       'tests/fixtures/*.coffee',
-      'tests/*.coffee',
+      'tests/test.coffee',
+      'tests/*.spec.coffee'
     ]
 
     # list of files to exclude
-    # remove this to run extra tests
     exclude: [
-      # 'tests/_*.coffee'
+
     ]
 
     # test results reporter to use
