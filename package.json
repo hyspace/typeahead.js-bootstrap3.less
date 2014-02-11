@@ -1,7 +1,7 @@
 {
   "name": "typeahead.js-bootstrap3.less",
   "description": "Bootstrap3 style for typeahead.js using Bootstrap 3 mixins and variables",
-  "version": "0.2.0",
+  "version": "0.0.0",
   "keywords": [
     "less",
     "bootstrap",
@@ -33,6 +33,7 @@
     "gulp-less": "~1.2.1",
     "gulp-concat": "~2.1.7",
     "coffee-script": "~1.7.1",
-    "gulp-util": "~2.2.14"
+    "gulp-util": "~2.2.14",
+    "gulp-replace": "~0.2.0"
   }
 }
