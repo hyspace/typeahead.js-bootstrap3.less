@@ -19,7 +19,8 @@ module.exports = (config) ->
       'tests/vendor/*.js',
       'tests/helpers/*.js',
       'tests/fixtures/*.coffee',
-      'tests/*.coffee',
+      'tests/test.coffee',
+      'tests/*.spec.coffee'
     ]
 
     # list of files to exclude
@@ -52,7 +53,7 @@ module.exports = (config) ->
     # - Safari (only Mac; has to be installed with `npm install karma-safari-launcher`)
     # - PhantomJS
     # - IE (only Windows; has to be installed with `npm install karma-ie-launcher`)
-    browsers: ['PhantomJS']
+    browsers: ['Chrome']
 
     # If browser does not capture in given timeout [ms], kill it
     captureTimeout: 5000

@@ -23,22 +23,9 @@
 }
 
 //main styles for control
-.tt-query,
+.tt-input,
 .tt-hint {
   .twitter-typeahead &{
-    // base style for control and hint
-    margin: 0;
-    width: 100%;
-    color: #555555;
-    vertical-align: middle;
-    background-color: @input-bg;
-    border: 1px solid @input-border;
-    border-radius: @input-border-radius;
-    .input-size(@input-height-base; @padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
-    .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
-    .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
-    .form-control-focus(@input-border-focus);
-
     //validation states
     .has-warning &{
       .typeahead-form-control(@state-warning-text);
@@ -74,9 +61,6 @@
     .border-left-radius(0);
     .border-right-radius(@border-radius-small);
   }
-  .input-group.input-group-sm .twitter-typeahead:only-child &{
-    border-radius:@border-radius-small;
-  }
 
   //sizing - large:size and border
   .input-group.input-group-lg .twitter-typeahead &{
@@ -93,22 +77,23 @@
     .border-left-radius(0);
     .border-right-radius(@border-radius-large);
   }
-  .input-group.input-group-lg .twitter-typeahead:only-child &{
-    border-radius:@border-radius-large;
-  }
 }
 
 //for wrapper
 .twitter-typeahead {
   width: 100%;
+  float: left;
+  .input-group &{
+    //overwrite `display:inline-block` style
+    display: table-cell!important;
+  }
 }
 
 //particular style for each other
 .twitter-typeahead .tt-hint {
   color: @text-muted;//color - hint
-  border: 1px solid transparent;
 }
-.twitter-typeahead .tt-query {
+.twitter-typeahead .tt-input {
   z-index: 2;
   //disabled status
   //overwrite inline styles of .tt-query
@@ -116,6 +101,7 @@
   &[readonly],
   fieldset[disabled] & {
     cursor: not-allowed;
+    //overwirte inline style
     background-color: @input-bg-disabled!important;
   }
 }
@@ -152,8 +138,7 @@
     color: @dropdown-link-color;
     white-space: nowrap;
 
-    &.tt-cursor,
-    &.tt-is-under-cursor {
+    &.tt-cursor {
       //item selected
       text-decoration: none;
       outline: 0;

@@ -1,7 +1,7 @@
 {
   "name": "typeahead.js-bootstrap3.less",
   "description": "Bootstrap3 style for typeahead.js using Bootstrap 3 mixins and variables",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "keywords": [
     "less",
     "bootstrap",
@@ -10,7 +10,8 @@
   "homepage": "http://little33.com/typeahead.js-bootstrap3.less/",
   "author": "hyspace",
   "scripts": {
-    "build": "./node_modules/.bin/gulp --require coffee-script/register",
+    "start": "./node_modules/.bin/gulp --require coffee-script/register",
+    "pretest": "npm start",
     "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
   },
   "repository": {
@@ -31,6 +32,7 @@
     "gulp": "~3.5.1",
     "gulp-less": "~1.2.1",
     "gulp-concat": "~2.1.7",
-    "coffee-script": "~1.7.1"
+    "coffee-script": "~1.7.1",
+    "gulp-util": "~2.2.14"
   }
 }
