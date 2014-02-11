@@ -12,6 +12,7 @@
   "ignore":[
     "bootstrap",
     "tests",
+    "example",
     ".gitignore",
     ".gitmodules",
     ".travis.yml",
