@@ -41,23 +41,36 @@
 
 <p>Based on the solution of <a href="https://github.com/kuroe">@kuroe</a></p>
 
-<p>Tested on PhantomJS, with <code>Bootstrap 3.1.0</code> and <code>typeahead 0.9.3</code></p>
+<p>Tested with PhantomJS and Chorme, with <code>Bootstrap 3.1.0</code> and <code>typeahead.js 0.10.0</code></p>
 
-<p>NOTICE: Not compatible with <code>typeahead 0.10.0</code> yet.</p>
+<h2>
+<a name="version" class="anchor" href="#version"><span class="octicon octicon-link"></span></a>version</h2>
+
+<p><strong>For <code>typeahead.js</code> under <code>0.10.0</code>, use <code>0.1.x</code> instead.</strong></p>
+
+<h2>
+<a name="changelog" class="anchor" href="#changelog"><span class="octicon octicon-link"></span></a>changelog</h2>
+
+<h3>
+<a name="020" class="anchor" href="#020"><span class="octicon octicon-link"></span></a>0.2.0</h3>
+
+<p><code>typeahead.js 0.10.0</code> has a big change, so does this less file.</p>
+
+<p>From <code>0.2.0</code> you should now uses <code>input-lg</code> or <code>input-sm</code> to contorl input sizes instead of using <code>input-group-lg</code> or <code>input-group-sm</code>. This is consistent with original <code>bootstrap</code>'s usage.</p>
+
+<p><strong>Notice: <code>.input-group</code> with no <code>.input-group-addon</code> is no longer supported. <code>input</code> in such <code>.input-group</code> will no longer have its <code>border-radius</code> set.</strong></p>
 
 <h2>
 <a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
 
 <p>This is a stylesheet for <a href="https://github.com/twitter/typeahead.js">typeahead.js</a>, which makes your "typeaheaded" input control looks same as <a href="https://github.com/twbs/bootstrap/">Bootstrap 3</a>'s.</p>
 
-<p>Using mixins and variables provided by Boostrap 3, This stylesheet is useful when you aplied custom theme to Boostrap for your site, because the change you made in variables and mixins will be aplied to your "typeaheaded" input control automatically.</p>
+<p>Using mixins and variables provided by Boostrap 3, This stylesheet is useful when you applied custom theme to Boostrap for your site, because the change you made in variables and mixins will be applied to your "typeaheaded" input control automatically.</p>
 
 <p><strong>This stylesheet requires <code>mixins.less</code> and <code>variables.less</code> of Bootstrap 3. If you are not using Boostrap's mixins and variables in your site, you can use compiled css file with default colors and sizings of Boostrap instead.</strong></p>
 
 <h2>
-<a name="styles" class="anchor" href="#styles"><span class="octicon octicon-link"></span></a>Styles</h2>
-
-<p>There is a difference between typeahead dropdown menu and Bootstrap 3 <code>dropdown</code>:</p>
+<a name="differences-between-bootstrap-3-dropdown-and-typeahead-suggestions" class="anchor" href="#differences-between-bootstrap-3-dropdown-and-typeahead-suggestions"><span class="octicon octicon-link"></span></a>Differences between Bootstrap 3 dropdown and typeahead suggestions</h2>
 
 <p><code>background-color</code> is set to <code>@dropdown-link-active-bg</code> instead of <code>@dropdown-link-hover-bg</code></p>
 
@@ -65,6 +78,8 @@
 <a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use</h2>
 
 <p>install with bower: <code>bower install typeahead.js-bootstrap3.less</code>.</p>
+
+<p>see <code>example/example.html</code></p>
 
 <h4>
 <a name="-if-you-have-less-source-files-of-bootstrap-in-your-project" class="anchor" href="#-if-you-have-less-source-files-of-bootstrap-in-your-project"><span class="octicon octicon-link"></span></a>-if you have less source files of Bootstrap in your project:</h4>
