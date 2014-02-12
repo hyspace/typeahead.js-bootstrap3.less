@@ -17,7 +17,7 @@
     base:'rgb(255, 255, 255)'
     transparent:'rgba(0, 0, 0, 0)'
     disabled:'rgb(238, 238, 238)'
-    focus:'rgb(66, 139, 202)'
+    focus:'rgb(245, 245, 245)'
   boxShadow:
     base:"rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset"
     baseFocus:"rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset, rgba(102, 175, 233, 0.6) 0px 0px 8px 0px"
