@@ -7,13 +7,19 @@ Bootstrap3 style for [typeahead.js](https://github.com/twitter/typeahead.js) usi
 
 Based on the solution of [@kuroe](https://github.com/kuroe)
 
-Tested with PhantomJS and Chorme, with `Bootstrap 3.1.0` and `typeahead.js 0.10.0`
+Tested with PhantomJS and Chorme, with `Bootstrap 3.1.0` and `typeahead.js 0.10.1`
 
 ## version
 
 **For `typeahead.js` under `0.10.0`, use `0.1.x` instead.**
 
 ## changelog
+
+###0.2.1
+
+see [#6](https://github.com/hyspace/typeahead.js-bootstrap3.less/pull/6)
+
+`background-color` changed to `@dropdown-link-hover-bg` instead of `@dropdown-link-active-bg`
 
 ###0.2.0
 
@@ -30,10 +36,6 @@ This is a stylesheet for [typeahead.js](https://github.com/twitter/typeahead.js)
 Using mixins and variables provided by Boostrap 3, This stylesheet is useful when you applied custom theme to Boostrap for your site, because the change you made in variables and mixins will be applied to your "typeaheaded" input control automatically.
 
 **This stylesheet requires `mixins.less` and `variables.less` of Bootstrap 3. If you are not using Boostrap's mixins and variables in your site, you can use compiled css file with default colors and sizings of Boostrap instead.**
-
-## Differences between Bootstrap 3 dropdown and typeahead suggestions
-
-`background-color` is set to `@dropdown-link-active-bg` instead of `@dropdown-link-hover-bg`
 
 ## How to use
 
@@ -64,4 +66,7 @@ link compiled css file to your site.
 
 This repo is here because this [Issue](https://github.com/twitter/typeahead.js/issues/378), and is based on the solution of [@kuroe](http://jsfiddle.net/kuroe/qrtua/14/)
 
-Also thanks for @emrah and @JoshAshby 's contribution
+Also thanks to contribution of
+@emrah
+@JoshAshby
+@jeffbowen
