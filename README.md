@@ -70,3 +70,7 @@ Also thanks to contribution of
 @emrah
 @JoshAshby
 @jeffbowen
+
+## License
+
+Code released under [the MIT license](LICENSE)
