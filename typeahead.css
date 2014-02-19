@@ -1,14 +1,11 @@
 /*
  * typehead.js-bootstrap3.less
- * @version 0.2.1
+ * @version 0.2.2
  * https://github.com/hyspace/typeahead.js-bootstrap3.less
  *
  * Licensed under the MIT license:
  * http://www.opensource.org/licenses/MIT
  */
-.input-group {
-  width: 100%;
-}
 .has-warning .twitter-typeahead .tt-input,
 .has-warning .twitter-typeahead .tt-hint {
   border-color: #8a6d3b;

@@ -1,6 +1,6 @@
 {
   "name": "typeahead.js-bootstrap3.less",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": [
     "typeahead.css",
     "typeahead.less"
