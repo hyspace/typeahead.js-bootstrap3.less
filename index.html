@@ -1,36 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Typeahead.js-bootstrap3.less : Bootstrap3 style for typeahead.js using bootstrap 3 mixins and variables." />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Typeahead.js-bootstrap3.less by hyspace</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Typeahead.js-bootstrap3.less</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1>Typeahead.js-bootstrap3.less</h1>
+        <p>Bootstrap3 style for typeahead.js using bootstrap 3 mixins and variables.</p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/hyspace/typeahead.js-bootstrap3.less">View on GitHub</a>
+        <p class="view"><a href="https://github.com/hyspace/typeahead.js-bootstrap3.less">View the Project on GitHub <small>hyspace/typeahead.js-bootstrap3.less</small></a></p>
 
-          <h1 id="project_title">Typeahead.js-bootstrap3.less</h1>
-          <h2 id="project_tagline">Bootstrap3 style for typeahead.js using bootstrap 3 mixins and variables.</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/hyspace/typeahead.js-bootstrap3.less/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/hyspace/typeahead.js-bootstrap3.less/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+        <ul>
+          <li><a href="https://github.com/hyspace/typeahead.js-bootstrap3.less/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/hyspace/typeahead.js-bootstrap3.less/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/hyspace/typeahead.js-bootstrap3.less">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
         <h1>
 <a name="typeaheadjs-bootstrap3less" class="anchor" href="#typeaheadjs-bootstrap3less"><span class="octicon octicon-link"></span></a>typeahead.js-bootstrap3.less</h1>
 
@@ -41,7 +38,7 @@
 
 <p>Based on the solution of <a href="https://github.com/kuroe">@kuroe</a></p>
 
-<p>Tested with PhantomJS and Chorme, with <code>Bootstrap 3.1.0</code> and <code>typeahead.js 0.10.0</code></p>
+<p>Tested with PhantomJS and Chorme, with <code>Bootstrap 3.1.0</code> and <code>typeahead.js 0.10.1</code></p>
 
 <h2>
 <a name="version" class="anchor" href="#version"><span class="octicon octicon-link"></span></a>version</h2>
@@ -50,6 +47,18 @@
 
 <h2>
 <a name="changelog" class="anchor" href="#changelog"><span class="octicon octicon-link"></span></a>changelog</h2>
+
+<h3>
+<a name="022" class="anchor" href="#022"><span class="octicon octicon-link"></span></a>0.2.2</h3>
+
+<p>bugfix</p>
+
+<h3>
+<a name="021" class="anchor" href="#021"><span class="octicon octicon-link"></span></a>0.2.1</h3>
+
+<p>see <a href="https://github.com/hyspace/typeahead.js-bootstrap3.less/pull/6">#6</a></p>
+
+<p><code>background-color</code> changed to <code>@dropdown-link-hover-bg</code> instead of <code>@dropdown-link-active-bg</code></p>
 
 <h3>
 <a name="020" class="anchor" href="#020"><span class="octicon octicon-link"></span></a>0.2.0</h3>
@@ -68,11 +77,6 @@
 <p>Using mixins and variables provided by Boostrap 3, This stylesheet is useful when you applied custom theme to Boostrap for your site, because the change you made in variables and mixins will be applied to your "typeaheaded" input control automatically.</p>
 
 <p><strong>This stylesheet requires <code>mixins.less</code> and <code>variables.less</code> of Bootstrap 3. If you are not using Boostrap's mixins and variables in your site, you can use compiled css file with default colors and sizings of Boostrap instead.</strong></p>
-
-<h2>
-<a name="differences-between-bootstrap-3-dropdown-and-typeahead-suggestions" class="anchor" href="#differences-between-bootstrap-3-dropdown-and-typeahead-suggestions"><span class="octicon octicon-link"></span></a>Differences between Bootstrap 3 dropdown and typeahead suggestions</h2>
-
-<p><code>background-color</code> is set to <code>@dropdown-link-active-bg</code> instead of <code>@dropdown-link-hover-bg</code></p>
 
 <h2>
 <a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use</h2>
@@ -108,29 +112,32 @@
 
 <p>This repo is here because this <a href="https://github.com/twitter/typeahead.js/issues/378">Issue</a>, and is based on the solution of <a href="http://jsfiddle.net/kuroe/qrtua/14/">@kuroe</a></p>
 
-<p>Also thanks for <a href="https://github.com/emrah" class="user-mention">@emrah</a> and <a href="https://github.com/JoshAshby" class="user-mention">@JoshAshby</a> 's contribution</p>
-      </section>
-    </div>
+<p>Also thanks to contribution of
+<a href="https://github.com/emrah" class="user-mention">@emrah</a>
+<a href="https://github.com/JoshAshby" class="user-mention">@JoshAshby</a>
+<a href="https://github.com/jeffbowen" class="user-mention">@jeffbowen</a></p>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Typeahead.js-bootstrap3.less maintained by <a href="https://github.com/hyspace">hyspace</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Code released under <a href="LICENSE">the MIT license</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/hyspace">hyspace</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-
+    <script src="javascripts/scale.fix.js"></script>
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
           <script type="text/javascript">
             try {
-              var pageTracker = _gat._getTracker("UA-21699184-1");
+              var pageTracker = _gat._getTracker("UA-21699184-3");
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
-
 
   </body>
 </html>
