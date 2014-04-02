@@ -1,6 +1,6 @@
 /*
  * typehead.js-bootstrap3.less
- * @version 0.2.2
+ * @version 0.2.3
  * https://github.com/hyspace/typeahead.js-bootstrap3.less
  *
  * Licensed under the MIT license:
@@ -128,10 +128,10 @@ select[multiple].input-group.input-group-lg .twitter-typeahead .tt-hint {
 }
 .twitter-typeahead {
   width: 100%;
-  float: left;
 }
 .input-group .twitter-typeahead {
   display: table-cell !important;
+  float: left;
 }
 .twitter-typeahead .tt-hint {
   color: #999999;

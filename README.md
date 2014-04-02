@@ -7,13 +7,17 @@ Bootstrap3 style for [typeahead.js](https://github.com/twitter/typeahead.js) usi
 
 Based on the solution of [@kuroe](https://github.com/kuroe)
 
-Tested with PhantomJS and Chorme, with `Bootstrap 3.1.0` and `typeahead.js 0.10.1`
+Tested with PhantomJS and Chorme, with `Bootstrap 3.1.1` and `typeahead.js 0.10.2`
 
 ## version
 
 **For `typeahead.js` under `0.10.0`, use `0.1.x` instead.**
 
 ## changelog
+
+###0.2.3
+
+bugfix
 
 ###0.2.2
 
