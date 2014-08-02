@@ -134,7 +134,7 @@ select[multiple].input-group.input-group-lg .twitter-typeahead .tt-hint {
   float: left;
 }
 .twitter-typeahead .tt-hint {
-  color: #999999;
+  color: #777777;
 }
 .twitter-typeahead .tt-input {
   z-index: 2;
