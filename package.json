@@ -7,7 +7,7 @@
     "bootstrap",
     "typeahead.js"
   ],
-  "homepage": "http://little33.com/typeahead.js-bootstrap3.less/",
+  "homepage": "http://hyspace.io/typeahead.js-bootstrap3.less/",
   "author": "hyspace",
   "scripts": {
     "start": "./node_modules/.bin/gulp --require coffee-script/register",
