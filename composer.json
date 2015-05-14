@@ -1,0 +1,24 @@
+{
+    "name": "hyspace/typeahead.js-bootstrap3.less",
+    "type": "component",
+    "description": "Bootstrap3 style for typeahead.js using Bootstrap 3 mixins and variables",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hyspace"
+        }
+    ],
+    "homepage": "http://hyspace.io/typeahead.js-bootstrap3.less/",
+    "require": {
+        "robloach/component-installer": "*"
+    },
+    "extra": {
+        "component": {
+            "name": "typeahead.js-bootstrap3",
+            "files": [
+			    "typeahead.css",
+			    "typeahead.less"
+            ]
+        }
+    }
+}
