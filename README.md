@@ -15,21 +15,21 @@ Tested with PhantomJS and Chorme, with `Bootstrap 3.1.1` and `typeahead.js 0.10.
 
 ## changelog
 
-###0.2.3
+### 0.2.3
 
 bugfix
 
-###0.2.2
+### 0.2.2
 
 bugfix
 
-###0.2.1
+### 0.2.1
 
 see [#6](https://github.com/hyspace/typeahead.js-bootstrap3.less/pull/6)
 
 `background-color` changed to `@dropdown-link-hover-bg` instead of `@dropdown-link-active-bg`
 
-###0.2.0
+### 0.2.0
 
 `typeahead.js 0.10.0` has a big change, so does this less file.
 
